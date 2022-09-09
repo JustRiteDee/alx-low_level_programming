@@ -7,11 +7,9 @@
  */
 int main(void)
 
-{	/*declaration*/
-	char ephy = "with proper grammar, but the outcome is a piece of art,"
-
-	/*statement*/
-	printf(ephy);
+{
+		
+	printf("with proper grammar, but the outcome is a piece of art,");
 
 	return (0)
 
