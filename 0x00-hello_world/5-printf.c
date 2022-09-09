@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *  main - Prints with proper grammar, but the outcome is a piece of art.
+ *  main - Prints proper grammar, but the outcome is a piece of art.
  *
  *  Retun: Always zero 
  */
