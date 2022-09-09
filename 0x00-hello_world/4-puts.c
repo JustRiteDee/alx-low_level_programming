@@ -3,7 +3,7 @@
  * main - Outputs a sentence
  * a: this variable is not used
  *
- * Return always 0 (success)
+ * Return: always 0 (success)
  *
  */
 int main(void)
