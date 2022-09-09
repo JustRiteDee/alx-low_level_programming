@@ -2,7 +2,7 @@
 /**
  *  main - Prints proper grammar, but the outcome is a piece of art.
  *
- *  Retun: Always to zero (0)
+ *  Return: Always to zero (0)
  */
 int main(void)
 {
