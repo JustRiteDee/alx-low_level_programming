@@ -21,9 +21,9 @@ int main(void)
 			putchar(' ');
 			putchar((j / 10) + '0');
 			putchar((j % 10) + '0');
-			if (!(i == 89 && j == 99))
-				putchar(',');
-				putchar(' ');
+				if (!(i == 89 && j == 99))
+					putchar(',');
+					putchar(' ');
 		}
 	}
 	putchar('\n');
