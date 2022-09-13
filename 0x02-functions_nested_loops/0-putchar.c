@@ -3,7 +3,7 @@
  *
  * Author: Emmanuel Ephraim
  */
-#include"main.h"
+#include "main.h"
 #include <unistd.h>
 /**
  * _putchar - writes the character c to stdout
