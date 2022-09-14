@@ -1,5 +1,5 @@
 /*
- * File name: 0_putchar
+ * File name: 0-putchar
  *
  * Author: Emmanuel Ephraim
  */
