@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_alphabet - utilizes the function to print alphabets.
+ * @c: The character to print.
  *
  */
 void print_alphabet(void)
