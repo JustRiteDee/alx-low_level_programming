@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * print_alphabet - utilizes the function to print alphabets.
- * @c: The character to print.
  *
+ * Return: Always zero (success)
  */
 void print_alphabet(void)
 {
