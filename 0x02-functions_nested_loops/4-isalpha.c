@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - main function
+ * _isalpha - main functioin
  * @c: Takes input from other true else 0
  *
  * Return: 1 is c if true else 0
@@ -11,5 +11,8 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
