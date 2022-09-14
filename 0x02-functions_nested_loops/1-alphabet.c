@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - Utilizes the _putchar function to print
+ * print_alphabet - Utilizes the function to print
  * the alphabets a - z
  *
  * Return: Always zero (success)
@@ -11,9 +11,7 @@ void print_alphabet(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-
 		_putchar(c);
 	}
-
 	_putchar('\n');
 }
