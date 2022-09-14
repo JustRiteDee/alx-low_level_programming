@@ -3,7 +3,7 @@
  * print_alphabet - Utilizes the _putchar function to print
  * the alphabets a - z
  *
- * Return: zero (success)
+ * Return: Always zero (success)
  */
 void print_alphabet(void)
 {
