@@ -10,7 +10,7 @@ int main(void)
 	int i;
 
 	i = 0; /* initializes the value for "i" */
-	positive_or_negative(i);
+	positive_or_negative(i); /*calling up the function*/
 
 	return (0);
 }
