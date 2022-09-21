@@ -4,7 +4,7 @@
 /**
  * _strcat - This is a function strcat
  * @dest: first parameter
- * src: second parameter
+ * @src: second parameter
  *
  * Return: Always returns a string
  *
