@@ -5,7 +5,7 @@
  * print_diagsums - function that prints the diagonals of a square matrix of integers
  * @a: input string
  * @size: input character
- *
+ * 
  * Return: always 0
  */
 
