@@ -7,8 +7,6 @@
  * @a: input string
  * @size: input character
  *
- * Description: prints the sum of the two diagonals of a
- * square matrix of integers
  * Return: always 0
  */
 
