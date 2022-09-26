@@ -3,13 +3,12 @@
 
 /**
  * print_diagsums - function that prints the sum of two diagonals of a 
- * square matrix of integers sum
+ *	square matrix of integers sum
  * @a: input string
  * @size: input character
  *
  * Return: always 0
  */
-
 void print_diagsums(int *a, int size)
 {
 	int i, j, s1, s2;
