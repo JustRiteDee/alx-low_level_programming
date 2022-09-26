@@ -6,8 +6,7 @@
  * integers
  * @a: input string
  * @size: input character
- * 
- * Return: always 0
+ * Return: no return
  */
 
 void print_diagsums(int *a, int size)
