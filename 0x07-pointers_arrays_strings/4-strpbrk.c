@@ -5,7 +5,7 @@
  * _strpbrk - function that searches a string for any set of byte
  * @s: input string
  * @accept: accepted string
- *
+ * 
  * Return: resturns accepted string
  */
 
