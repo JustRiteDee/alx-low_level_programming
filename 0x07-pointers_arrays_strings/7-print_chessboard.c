@@ -5,7 +5,6 @@
  * @a: input chars
  * Returns: no return
  */
-
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
