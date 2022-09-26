@@ -6,7 +6,6 @@
  * @s: input string
  * @c: input character
  *
- * 
  * Return: returns a ptr to the 1st occurrence of
  * the char c in str s, else, return NULL
  */
