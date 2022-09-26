@@ -3,7 +3,7 @@
  * _memset - function that fills memory with constant byte.
  * @s: input string
  * @b: input character
- * @ input size
+ * @n: input size
  * Return: returns a pointer to dest.
  */
 char *_memset(char *s, char b, unsigned int n)
