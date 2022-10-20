@@ -10,19 +10,20 @@
  * free_list - Frees a list_t list
  * @head: Start of the list
  **/
+ 
 void free_list(list_t *head)
 {
-	list_t *tmp;
+	list_t *cur_node;
 
-	if (head == NULL)
-		return;
+	while ((cur_node = head) != NULL)
 
-	for (; head;)
 	{
-		tmp = head;
-		head = head->next;
-		free(tmp->str);
-		free(tmp);
-	}
 
+		head = head->next;
+
+		free(cur_node->str);
+
+		free(cur_node);
+
+	}
 }

@@ -8,7 +8,7 @@
  
 /**
  * _100first - Prints a message before main function
- **/
+ */
  
 void __attribute__ ((constructor)) _100first(void)
 {
