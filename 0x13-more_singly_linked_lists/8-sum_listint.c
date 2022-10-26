@@ -1,22 +1,19 @@
 #include "lists.h"
 
 /**
- * File name - 8-sum_listint.c
- * Author - Emmanuel Ephraim
- */
- 
-/**
- * sum_listint - Sum of all the data (n) of a listint_t linked list
- * @head: Head of the list
+ * sum_listint - returns the sum of all the data (n) of a listint_t linked list
+ * @head: pointer to the first node in the list
  *
- * Return: Sum
- **/
+ * Return: sum of all the data (n) of a listint_t linked list
+ */
 int sum_listint(listint_t *head)
 {
-	int sum;
+	int sum = 0;
 
-	for (sum = 0; head != NULL; head = head->next)
+	while (head != NULL)
+	{
 		sum += head->n;
-
+		head = head->next;
+	}
 	return (sum);
 }

@@ -1,23 +1,20 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * File name - 4-free_listint.c
- * Author - Emmanuel Ephraim
+ * free_listint -  frees a listint_t list.
+ * @head: pointer to the beginning of the list
+ *
+ * Return: void
  */
- 
-/**
- * free_listint - Frees a listint_t list
- * @head: Head of the list
- **/
 void free_listint(listint_t *head)
 {
-	listint_t *aux;
+	listint_t *next;
 
-	for (; head != NULL;)
+	while (head != NULL)
 	{
-		aux = head;
-		head = head->next;
-		free(aux);
+		next = head->next;
+		free(head);
+		head = next;
 	}
-
 }
