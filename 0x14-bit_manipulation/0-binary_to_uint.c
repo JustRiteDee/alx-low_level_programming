@@ -1,5 +1,5 @@
-#include "holberton.h"
-#include <stdlib.h>
+#include "main.h"
+
 
 /**
  * _strlen - gets the lenght of input strings

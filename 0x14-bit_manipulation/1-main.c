@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * main - check the code for Holberton School students.
