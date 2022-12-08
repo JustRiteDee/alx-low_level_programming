@@ -1,47 +1,45 @@
 #include "lists.h"
-
 /**
- * insert_dnodeint_at_index - a function that inserts a
- * new node at a given position.
- * @idx: the index of the list where the new node should
- * be added. Index starts at 0
- * @n: input node
- * @h: head of linked list
- *
- * Return:  the address of the new node, or NULL if it failed
- * if it is not possible to add the new node at index idx, do not
- * add the new node and return NULL
- */
+* insert_dnodeint_at_index - insert  a node to a dlistint_t list.
+* @h: double pointer to structure
+* @idx: index of node to get from the list
+* @n: data
+* Return: the adrress of nth node, or NULL if it failed
+*/
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *tmp = *h, *new;
+	dlistint_t *new, *tmp;
+	unsigned int nth;
+
+	new = (dlistint_t *)malloc(sizeof(dlistint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
 
 	if (idx == 0)
 	{
-		return (add_dnodeint(h, n));
+		new->next = (*h);
+		if (*h)
+			(*h)->prev = new;
+		(*h) = new;
+		new->prev = NULL;
+		return (new);
 	}
-	for (; idx != 1; idx--)
+	tmp = *h;
+	nth = 0;
+	while (tmp && nth < idx - 1)
 	{
+		nth++;
 		tmp = tmp->next;
-		if (!tmp)
-		{
-			return (NULL);
-		}
 	}
-	if (!tmp->next)
-	{
-		return (add_dnodeint_end(h, n));
-	}
-	new = malloc(sizeof(dlistint_t));
-
-	if (!new)
-	{
+	if (tmp == NULL)
 		return (NULL);
-	}
-	new->n = n;
-	new->prev = tmp;
 	new->next = tmp->next;
-	tmp->next->prev = new;
+	new->prev = tmp;
+	if (tmp->next)/*edge case*/
+		tmp->next->prev = new;
 	tmp->next = new;
+
 	return (new);
 }
